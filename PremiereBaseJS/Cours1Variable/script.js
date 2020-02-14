@@ -22,8 +22,8 @@ let prenom2 = "Kamel";
 // Avec Const la valeur ne pourra jamais etre modifier elle sera toujours constante
 const prenom3 = "Moi";
 
-// Ici nous devons impérativement nommé le nom de la variable differement
-// pour sont fonctionnement sinon une erreur se produira. 
+// Ici nous devons impérativement nommé le nom des variables differement
+// pour leur fonctionnement sinon une erreur se produira. 
 
 // Lextension turbo console log peut etre utilisé pour generé automatiquement les consoles logs
 // en pressant sur CTRL + ALT + L. 
