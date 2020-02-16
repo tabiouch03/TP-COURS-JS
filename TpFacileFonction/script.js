@@ -8,6 +8,8 @@
 // Euh... Je veux dire... Monsieur le grand magicien [nom] ! Cela fait déjà [age] ans que vous faites rayonner notre contrée !".
 
 
+// Premiere methode avec confirmation
+
 function ageConfirmation() {
 
     if (age = prompt("Quel est votre age ?")) {
@@ -19,11 +21,38 @@ function ageConfirmation() {
     }
 
     if (nom = prompt("Quel est votre nom ?")) {
-        confirm("etes vous sur de votre nom " + nom + " ?")
+        confirm("etes vous sur de votre nom " + nom + " ?");
+
     }
 
-    alert("Sapristi ! On ne m'avait pas prévenu que c'était vous," + prenom + " ! Euh... Je veux dire... Monsieur le grand magicien " + nom + " ! Cela fait déjà " + age +  " ans que vous faites rayonner notre contrée !")
+    alert("Sapristi ! On ne m'avait pas prévenu que c'était vous," + prenom + " ! Euh... Je veux dire... Monsieur le grand magicien " + nom + " ! Cela fait déjà " + age + " ans que vous faites rayonner notre contrée !")
 
 }
 
-ageConfirmation();
+// Deuxieme méthode sans confirmation
+
+function sansConfirmation() {
+
+    let age = prompt("Quel age avez vous ?")
+    let nom = prompt("Quel est votre nom ?")
+    let prenom = prompt("Quel est votre prenom ?")
+
+    alert("Sapristi ! On ne m'avait pas prévenu que c'était vous, "
+        + prenom
+        + " ! Euh... Je veux dire... Monsieur le grand magicien "
+        + nom
+        + " ! Cela fait déjà "
+        + age
+        + " ans que vous faites rayonner notre contrée !")
+
+}
+
+function prenomRequire() {
+
+    let prenom = prompt("Quel est votre prenom ?");
+    while (prenom == "" || prenom == null) {
+      prenom = prompt("Vous n'avez pas de prenom ?");
+    }
+}
+
+prenomRequire();
