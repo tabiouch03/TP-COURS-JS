@@ -1,6 +1,6 @@
 let nbcopie = 30;
 
-if (nbcopie < 10) {
+if (nbcopie <= 10) {
     prix = nbcopie * 0.1;
 } else if (nbcopie > 11) {
     prix = (10*0.1) + ((nbcopie - 11) * 0.09);
